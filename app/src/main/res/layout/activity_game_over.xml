@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jx372.gugudanfighter.GameOverActivity">
+
+    <TextView
+        android:id="@+id/textcount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="맞은갯수"
+        tools:layout_editor_absoluteX="172dp"
+        tools:layout_editor_absoluteY="77dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="58dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="다시게임을 시작하겠습니까?"
+        tools:layout_editor_absoluteX="151dp"
+        tools:layout_editor_absoluteY="128dp"
+        android:layout_marginTop="46dp"
+        android:layout_below="@+id/textcount"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="네"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="192dp"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="아니요"
+        tools:layout_editor_absoluteX="196dp"
+        tools:layout_editor_absoluteY="192dp"
+        android:layout_alignBaseline="@+id/button4"
+        android:layout_alignBottom="@+id/button4"
+        android:layout_toEndOf="@+id/textcount" />
+</RelativeLayout>
